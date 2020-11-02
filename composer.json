@@ -9,7 +9,6 @@
     ],
     "require": {
         "bossanova/bossanova" : "dev-master",
-        "phpmailer/phpmailer": "dev-master",
         "jexcel/jexcel-database": "dev-main"
     }
 }
