@@ -1,0 +1,36 @@
+postgresql:
+  image: postgres:latest
+  restart: always
+  environment:
+    POSTGRES_DB: postgres
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: postgres
+  ports:
+    - 54320:5432
+  volumes:
+    - .:/var/www/html
+    - postgres_data:/var/lib/postgresql/data
+
+web:
+  build: ./resources/docker/aws
+  ports:
+    - 8081:80
+  volumes:
+    - .:/var/www/html
+  links:
+    - php
+
+php:
+  build: ./resources/docker/php
+  ports:
+    - 9000
+  volumes:
+    - .:/var/www/html
+  links:
+    - redis
+    - postgresql
+
+redis:
+  image: redis:alpine
+  expose:
+    - 6379

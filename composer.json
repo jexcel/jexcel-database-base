@@ -1,0 +1,15 @@
+{
+    "name": "jexcel/jexceldb-example",
+    "description": "Jexcel Db Example",
+    "keywords": [ "development" ],
+    "license": "MIT",
+    "type": "project",
+    "authors": [
+        { "name": "Paul Hodel", "email": "paul.hodel@gmail.com" }
+    ],
+    "require": {
+        "bossanova/bossanova" : "dev-master",
+        "phpmailer/phpmailer": "dev-master",
+        "jexcel/jexcel-database": "dev-main"
+    }
+}
