@@ -1,4 +1,4 @@
-# Jexcel spreadsheet
+# Jspreadsheet spreadsheet
 ## Database integration
 
 Persisting the spreadsheet data using a database.
