@@ -1,14 +1,15 @@
 {
-    "name": "jexcel/jexceldb-example",
-    "description": "Jexcel Db Example",
-    "keywords": [ "development" ],
+    "name": "jspreadsheet/db-example",
+    "description": "Jspreadsheet integration with postgresql using PHP",
+    "keywords": [ "development", "spreadsheet", "PHP" ],
     "license": "MIT",
     "type": "project",
     "authors": [
-        { "name": "Paul Hodel", "email": "paul.hodel@gmail.com" }
+        {
+            "name": "Jspreadsheet", "email": "contact@jspreadsheet.com" }
     ],
     "require": {
         "bossanova/bossanova" : "dev-master",
-        "jexcel/jexcel-database": "dev-main"
+        "jspreadsheet/db": "dev-main"
     }
 }
